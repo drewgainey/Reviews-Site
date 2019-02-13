@@ -7,7 +7,13 @@
 <div th:each = "review: ${reviews}">
 		<P th:text = "${review.reviewName}"></P>
 		<img th:src ="${review.image}">
-		<P th:text = "${review.reviewDescription}"></P>
+		<oL>
+			<li th:text="${review.song1}"></li>
+			<li th:text="${review.song2}"></li>
+			<li th:text="${review.song3}"></li>
+			<li th:text="${review.song4}"></li>
+			<li th:text="${review.song5}"></li>
+		</oL>
 		<a href="http://localhost:8080/show-reviews">Go Back</a>
 	</div>
 </body>

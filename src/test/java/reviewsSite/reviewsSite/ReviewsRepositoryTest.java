@@ -11,10 +11,10 @@ import org.junit.Test;
 public class ReviewsRepositoryTest {
 
 	private long reviewId = 1L;
-	private Review review = new Review(reviewId, "review name", "review description","");
+	private Review review = new Review(reviewId, "review name", "review description","","","","","");
 
 	private long secondReviewId = 2L;
-	private Review secondReview = new Review(secondReviewId, "review name", "review description","");
+	private Review secondReview = new Review(secondReviewId, "review name", "review description","","","","","");
 
 	ReviewRepository underTest = new ReviewRepository(review, secondReview);
 
