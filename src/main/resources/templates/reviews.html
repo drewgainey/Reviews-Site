@@ -7,7 +7,7 @@
 	<h1>All Reviews</h1>
 	
 	<div th:each="review: ${reviews}">
-		<li th:text="${review.reviewName}"> </li>
+		<li><a th:href="@{/review(id=${review.id})}" th:text="${review.reviewName}"> </a>  </li>
 	</div>
 
 
