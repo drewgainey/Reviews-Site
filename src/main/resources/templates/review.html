@@ -6,6 +6,7 @@
 <body>
 <div th:each = "review: ${reviews}">
 		<P th:text = "${review.reviewName}"></P>
+		<img th:src ="${review.image}">
 		<P th:text = "${review.reviewDescription}"></P>
 		<a href="http://localhost:8080/show-reviews">Go Back</a>
 	</div>
