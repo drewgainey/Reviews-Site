@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-	<title>Reviews</title>
+	<title>Top Dead</title>
 </head>
 <body>
-	<h1>All Reviews</h1>
-	
+	<h1>Best Grateful Dead Albums of All Time</h1>
+	<P>Here is a list of my top 5 Grateful Dead albums. Click on each one to see how I rank each song in the album</P>
+	<ol>
 	<div th:each="review: ${reviews}">
 		<li><a th:href="@{/review(id=${review.id})}" th:text="${review.reviewName}"> </a>  </li>
 	</div>
-
+	</ol>
 
 </body>
 </html>
